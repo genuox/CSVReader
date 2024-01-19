@@ -51,7 +51,7 @@ namespace MyApp
               
 
             }
-            topScorers.ForEach(x =>
+            topScorers.OrderBy(a =>a.FullName).ToList().ForEach(x =>
             {
                 Console.WriteLine(x.FullName);
             });
